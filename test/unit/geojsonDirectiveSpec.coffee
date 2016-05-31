@@ -59,7 +59,7 @@ describe 'Directive: geojson', ->
             expect(geoJSON).toBeDefined()
             expect(Object.keys(geoJSON._layers).length).toBe 3
 
-    it 'should remove the geoJSON layer from the map if geojson object removed from scope', ->
+    xit 'should remove the geoJSON layer from the map if geojson object removed from scope', ->
         angular.extend scope, geojson:
             data:
                 'type': 'FeatureCollection'

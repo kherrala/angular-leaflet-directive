@@ -1,5 +1,5 @@
 /*!
-*  angular-leaflet-directive 0.7.15 2015-04-21
+*  angular-leaflet-directive 0.7.15 2016-05-31
 *  angular-leaflet-directive - An AngularJS directive to easily interact with Leaflet maps
 *  git: https://github.com/tombatossals/angular-leaflet-directive
 */
@@ -3056,8 +3056,7 @@ angular.module("leaflet-directive")
                     _remove(leafletGeoJSON);
                 };
 
-                var _addGeojson = function(model, maybeName){
-                    var geojson = angular.copy(model);
+                var _addGeojson = function(geojson, maybeName){
                     if (!(isDefined(geojson) && isDefined(geojson.data))) {
                         return;
                     }
